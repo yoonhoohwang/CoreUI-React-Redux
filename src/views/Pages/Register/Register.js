@@ -1,5 +1,18 @@
-import React, { Component } from 'react';
-import { Button, Card, CardBody, CardFooter, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
+import React, { Component } from "react"
+import {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  Col,
+  Container,
+  Form,
+  Input,
+  InputGroup,
+  InputGroupAddon,
+  InputGroupText,
+  Row
+} from "reactstrap"
 
 class Register extends Component {
   render() {
@@ -16,43 +29,65 @@ class Register extends Component {
                     <InputGroup className="mb-3">
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
-                          <i className="icon-user"></i>
+                          <i className="icon-user" />
                         </InputGroupText>
                       </InputGroupAddon>
-                      <Input type="text" placeholder="Username" autoComplete="username" />
+                      <Input
+                        type="text"
+                        placeholder="Username"
+                        autoComplete="username"
+                      />
                     </InputGroup>
                     <InputGroup className="mb-3">
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>@</InputGroupText>
                       </InputGroupAddon>
-                      <Input type="text" placeholder="Email" autoComplete="email" />
+                      <Input
+                        type="text"
+                        placeholder="Email"
+                        autoComplete="email"
+                      />
                     </InputGroup>
                     <InputGroup className="mb-3">
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
-                          <i className="icon-lock"></i>
+                          <i className="icon-lock" />
                         </InputGroupText>
                       </InputGroupAddon>
-                      <Input type="password" placeholder="Password" autoComplete="new-password" />
+                      <Input
+                        type="password"
+                        placeholder="Password"
+                        autoComplete="new-password"
+                      />
                     </InputGroup>
                     <InputGroup className="mb-4">
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
-                          <i className="icon-lock"></i>
+                          <i className="icon-lock" />
                         </InputGroupText>
                       </InputGroupAddon>
-                      <Input type="password" placeholder="Repeat password" autoComplete="new-password" />
+                      <Input
+                        type="password"
+                        placeholder="Repeat password"
+                        autoComplete="new-password"
+                      />
                     </InputGroup>
-                    <Button color="success" block>Create Account</Button>
+                    <Button color="success" block>
+                      Create Account
+                    </Button>
                   </Form>
                 </CardBody>
                 <CardFooter className="p-4">
                   <Row>
                     <Col xs="12" sm="6">
-                      <Button className="btn-facebook mb-1" block><span>facebook</span></Button>
+                      <Button className="btn-facebook mb-1" block>
+                        <span>facebook</span>
+                      </Button>
                     </Col>
                     <Col xs="12" sm="6">
-                      <Button className="btn-twitter mb-1" block><span>twitter</span></Button>
+                      <Button className="btn-twitter mb-1" block>
+                        <span>twitter</span>
+                      </Button>
                     </Col>
                   </Row>
                 </CardFooter>
@@ -61,8 +96,8 @@ class Register extends Component {
           </Row>
         </Container>
       </div>
-    );
+    )
   }
 }
 
-export default Register;
+export default Register

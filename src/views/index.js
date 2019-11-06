@@ -15,17 +15,19 @@ import {
   Switches,
   Tables,
   Tabs,
-  Tooltips,
-} from './Base';
+  Tooltips
+} from "./Base"
 
-import { ButtonDropdowns, ButtonGroups, Buttons, BrandButtons } from './Buttons';
-import Charts from './Charts';
-import Dashboard from './Dashboard';
-import { CoreUIIcons, Flags, FontAwesome, SimpleLineIcons } from './Icons';
-import { Alerts, Badges, Modals } from './Notifications';
-import { Login, Page404, Page500, Register } from './Pages';
-import { Colors, Typography } from './Theme';
-import Widgets from './Widgets';
+import { ButtonDropdowns, ButtonGroups, Buttons, BrandButtons } from "./Buttons"
+import Charts from "./Charts"
+import Dashboard from "./Dashboard"
+import { CoreUIIcons, Flags, FontAwesome, SimpleLineIcons } from "./Icons"
+import { Alerts, Badges, Modals } from "./Notifications"
+import { Page404, Page500 } from "./Pages"
+import Login from "./LoginTest"
+import Register from "./RegisterTest"
+import { Colors, Typography } from "./Theme"
+import Widgets from "./Widgets"
 
 export {
   Badges,
@@ -64,6 +66,5 @@ export {
   Carousels,
   Cards,
   Breadcrumbs,
-  Paginations,
-};
-
+  Paginations
+}
