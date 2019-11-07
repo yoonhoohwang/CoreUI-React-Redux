@@ -1,0 +1,16 @@
+{
+  "api": {
+    "id": 0,
+    "token": "12345",
+    "email": "yoonhu1431@gmail.com"
+  },
+  "auth": {
+    "email": "yoonhu1431@gmail.com",
+    "password": "1234"
+  },
+  "users": {
+    "name": "jeff",
+    "email": "yoonhu1431@gmail.com",
+    "password": "1234"
+  }
+}
