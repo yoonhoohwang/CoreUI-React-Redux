@@ -10,8 +10,12 @@ import App from "./App"
 import * as serviceWorker from "./serviceWorker"
 import configureStore from "./store/store"
 
+const backUrl = {
+  test: "http://localhost:3010",
+  backend: "http://backend-url:{PORT}"
+}
 ReactDOM.render(
-  <Provider store={configureStore()}>
+  <Provider store={configureStore()} globalState={backUrl.test}>
     <App />
   </Provider>,
   document.getElementById("root")

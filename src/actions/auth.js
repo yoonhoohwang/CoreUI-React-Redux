@@ -12,7 +12,7 @@ import {
 import { setAlert } from "./alert"
 // eslint-disable-next-line import/extensions
 import setAuthToken from "../utils/setAuthToken.js"
-
+import backUrl from "../store/state"
 // Load User
 export const loadUser = () => async dispatch => {
   if (localStorage.token) {
@@ -20,7 +20,7 @@ export const loadUser = () => async dispatch => {
   }
 
   try {
-    const res = await axios.get("/api/auth")
+    const res = await axios.get(`${backUrl}/api/auth`)
     dispatch({
       type: USER_LOADED,
       payload: res.data
@@ -47,7 +47,7 @@ export const register = ({ name, email, password }) => async dispatch => {
   })
 
   try {
-    const res = await axios.post("/api/users", body, config)
+    const res = await axios.post(`${backUrl}/api/users`, body, config)
     dispatch({
       type: REGISTER_SUCCESS,
       payload: res.data
@@ -78,7 +78,7 @@ export const login = (email, password) => async dispatch => {
   })
 
   try {
-    const res = await axios.post("/api/auth", body, config)
+    const res = await axios.post(`${backUrl}/api/auth`, body, config)
     dispatch({
       type: LOGIN_SUCCESS,
       payload: res.data
